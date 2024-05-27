@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>calculator</title>
+	<style type="text/css">
+		.container{
+			height: 100vh;
+			width: 100%;
+			background-image:url();
+			position: fixed;
+			top: 0px;
+			left: 0px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.parent_div{
+			height: 550px;
+			width: 360px;
+			background-color:black;
+			border-radius: 50px;
+			box-shadow: 0px 0px 40px black;
+			padding: 30px;
+		}
+		.output{
+			height: 75px;
+			width: 60%;
+			font-size: 40px;
+			text-align: right;
+			padding: 0px 25px;
+		}
+		input{
+			height: 50px;
+			width: 72px;
+			margin: 5px;
+			border-radius:35px;
+			background-color:grey;
+			border:none;
+			color: black;
+			font-size: 15px;
+			font-family: Arial Black;
+		}
+		input:hover{
+			cursor: pointer;
+		}
+
+		input[name="operator"],.org{
+    background-color: skyblue;
+    width: 57px;
+  }
+  .eql{
+    width: 110px;
+}
+		
+
+	</style>
+	</style>
+</head>
+<body>
+   
+  <div class="container">
+  <div class="parent-div">
+  	<form>
+  		
+        <div class="data">
+  		<input type="text" name="op" class="output" disabled>
+
+  	</form>
+  	</div>
+  	         <div class="op">
+                <input type="button" name="operator" value="x" onclick="op.value += 'x'"> 
+                <input type="button" name="operator" value="x²" onclick="op.value += 'x²'">
+                <input type="button" name="operator" value="log" onclick="op.value += 'log'"> 
+                <input type="button" name="operator" value="√x" onclick="op.value += '√x'"> 
+                <input type="button" name="operator" value="ln" onclick="op.value += 'ln'">  
+                 <input type="button" name="operator" value="log()" onclick="op.value += 'log()'">  
+               
+            </div> 
+            <div class="op">
+                
+                <input type="button" name="operator" value="hyp" onclick="op.value += 'hyp'">
+                <input type="button" name="operator" value="sin" onclick="op.value += 'sin'"> 
+                <input type="button" name="operator" value="cos" onclick="op.value += 'cos'"> 
+                <input type="button" name="operator" value="tan" onclick="op.value += 'tan'"> 
+                <input type="button" name="operator" value="(" onclick="op.value += '('">  
+                <input type="button" name="operator" value=")" onclick="op.value += ')'">  
+               
+            </div> 
+             <div class="op">
+                <input type="button" name="operator" value="RCL" onclick="op.value += 'RCL'"> 
+                <input type="button" name="operator" value="ENG" onclick="op.value += 'ENG'">
+                <input type="button" name="operator" value="x!" onclick="op.value += 'x!'"> 
+                <input type="button" name="operator" value="S<=>D" onclick="op.value += 'S<=>D'"> 
+                <input type="button" name="operator" value="M+" onclick="op.value += 'M+'">  
+                <input type="button" name="operator" value="(-)" onclick="op.value += '(-)'"> 
+            </div> 
+  	        <div>
+                <input type="button" name="num" value="7" onclick="op.value += '7'"> 
+                <input type="button" name="num" value="8" onclick="op.value += '8'"> 
+                <input type="button" name="num" value="9" onclick="op.value += '9'"> 
+                <input type="button" name="num" value="DEL" onclick="op.value += 'DEL'">
+                <input type="button" name="num" value="AC" onclick="op.value += 'AC'"> 
+            </div>
+            <div>
+                <input type="button" name="num" value="4" onclick="op.value += '4'"> 
+                <input type="button" name="num" value="5" onclick="op.value += '5'"> 
+                <input type="button" name="num" value="6" onclick="op.value += '6'"> 
+                <input type="button" name="operator" value="x" onclick="op.value += 'x'">
+                <input type="button" name="operator" value="÷" onclick="op.value += '÷'"> 
+            </div>
+            <div>
+                <input type="button" name="num" value="1" onclick="op.value += '1'"> 
+                <input type="button" name="num" value="2" onclick="op.value += '2'"> 
+                <input type="button" name="num" value="3" onclick="op.value += '3'"> 
+                <input type="button" name="operator" value="+" onclick="op.value += '+'">
+                <input type="button" name="operator" value="-" onclick="op.value += '-'"> 
+            </div>
+             <div>
+                 
+                <input type="button" name="num" value="10^x" onclick="op.value += '10^x'"> 
+                <input type="button" name="num" value="0" onclick="op.value += '0'">
+                <input type="button" name="operator" value="." onclick="op.value += '.'"> 
+                <input type="button" name="operator" value="Ans" onclick="op.value += 'Ans'">
+                 <input type="button" name="" value="=" onclick="op.value = eval(op.value)" class="eql ">
+            </div>
+  	</div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        .heading{
+            font-size: 50px;
+            color: brown;
+        }
+        label{
+            font-size: 25px;
+            font-weight: bolder;
+        }
+        .form-container{
+            margin-top: 50px;
+        }
+        textarea{
+            margin-top: 30px;
+            font-size: 20px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            padding: 20px;
+        }
+        button{
+            border: none;
+            height: 50px;
+            width: 120px;
+            background-color: brown;
+            color: aliceblue;
+            border-radius: 13px;
+        }
+        button:hover{
+            cursor: pointer;
+        }
+    </style>
+    <title>TEXT EDITOR</title>
+</head>
+<body>
+    
+        <div class="texteditor" align="center">
+            <h1 class="heading">Text Box</h1>
+            <div class="form-container">
+                <form class="textform">
+                    <label>Enter some text below</label><br>
+                    <textarea rows="20" cols="90" autofocus id="usertext" onkeyup="updateTextInfo()"></textarea>
+                    <br><br>
+                    <button type="button" onclick="transformToUppercase()">UPPERCASE</button>
+                    <button type="button" onclick="transformToLowercase()">LOWERCASE</button>
+                    <button type="button" onclick="searchText()">SEARCH TEXT</button>
+                    <button type="button" onclick="changeTextColor()">CHANGECOLOR</button>
+                    <br><br>
+                    <h2 id="op">This Text Contains 0 words and 15 Characters</h2>
+                </form>
+            </div>
+        </div>
+        <script type="text/javascript">
+            function updateTextInfo() 
+            {
+                let text = document.getElementById("usertext").value;
+                let wrds = text.split(" ").length -1;
+                document.getElementById("op").innerHTML = "This text contains "+ wrds+" words and "+text.lenght+" characters"
+                
+            }
+            function transformToUppercase() {
+                let text = document.getElementById("usertext");
+                text.value = (text.value).toUpperCase();
+                
+            }
+            function transformToLowercase() {
+                let text = document.getElementById("usertext");
+                text.value = (text.value).toLowerCase();
+                
+            }
+            function searchText() {
+                let text = document.getElementById("usertext").value;
+                let searchText = prompt("Enter a text to search : ")
+
+                if (text.includes(searchText)) {
+                    alert("Yess the text"+ searchText + "is present")
+                }
+                else{
+                    alert("Noo the text"+ searchText + " is not present")
+                }
+                
+            }
+            function changeTextColor() 
+            {
+                let text = document.getElementById("usertext");
+                text.style.color = prompt("Enter a Color :");
+                
+            }
+        </script>
+        
+    
+</body>
+</html>

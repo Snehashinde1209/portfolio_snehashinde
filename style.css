@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.portfolio-sections{
+   height:80px;
+   width:100%;
+   text-align: center;
+   background-color: white;
+}
+.navigation-bar{
+   position:fixed;
+   width:100%;
+   background-color: transparent;
+   backdrop-filter: blur(10px);
+   z-index: 1;
+}
+.portfolio-sections h1{
+   margin-top: 50px;
+}
+html{
+scroll-behavior: smooth;
+}
+.main-container{
+  position:relative;
+  top: 75px;
+}
+.brand{
+  font-size: 30px;
+  font-family: Arial Black;
+  font-variant: small-caps;
+  color: aquablue;
+}
+.navmenu{
+  color:black;
+  font-family:sans-serif;
+  font-weight: bolder;
+  padding-left: 15px;
+}
+.navmenu.hover{
+  text-decoration: underline 2px solid black;
+  text-underline-offset: 6px;
+}
+  .tracking-in-expand {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+          animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes scale-up-center{
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+#home{
+   height:370px;
+   background-image: url("https://giffiles.alphacoders.com/361/36145.gif");
+   background-repeat: no-repeat;
+   background-size: 28%;
+   background-position: 90% 20%;
+   border: none;
+   margin-top:10px;
+}
+#home-info{
+  position: absolute;
+  top:20px;
+  width:400px;
+  height:250px;
+  font-size:25px;
+  margin-top:50px;
+  margin-left:50px;
+}
+.info{
+  font-weight:bolder;
+  color:darkgreen;
+  text-align: left !important;
+  font-size:40px;
+}
+.designation{
+  COLOR:darkgreen;
+  font-size: 25px;
+  font-weight: bolder;
+  }
+.myname{
+  font-size:35px;
+}
+.rsmbtn{
+  height:40px;
+  width:100px;
+  border:none;
+  margin-top:20px;
+  border-radius:10px;
+  font-size: 15px;
+  font-weight: bolder;
+  background-color:black;
+  color:green;
+  transition-duration:0.5;
+}
+.rsmbtn:hover{
+  background-color:green;
+  color:black;
+  border:3px solid red;
+  transform: scale(1.2);
+}
+.about-section{
+  height:450px;
+  width:100%;
+  background-color:;
+}
+.aboutmain{
+  height:80px;
+  width:100%;
+  display:flex;
+  font-size:25px;
+  font-family:sans-serif;
+  font-weight: bolder;
+}
+.aboutmain{
+  height:450px;
+  width:50%;
+}
+.minion{
+  margin-top:right !important;
+  animation-duration:1s;
+  animation-name:zoom;
+  animation-iteration-count:1;
+  background-position: 90% 20%;
+}
+@keyframes zoom{
+  100%{
+    transform:scale(1.5);
+    border-radius:60px;
+  }
+}
+.heading{
+  font-family:Arial black;
+  text-align:;
+  margin:30px 0px;
+  font-size: 40px;
+  color:darkgreen;
+}
+.carrerobj{
+  padding:20px;
+}
+.carrerinfo {
+  text-align:justify;
+  line-height: 30px;
+  text-indent:50px;
+  word-spacing:1px;
+  letter-spacing:1px;
+}
+.skills-section{
+ height:500px;
+ width:100%;
+ background-color:skyblue;
+
